@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		462CE8962AFBBE22000B8F12 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 462CE8952AFBBE22000B8F12 /* AppDelegate.m */; };
+		462CE8992AFBBE22000B8F12 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 462CE8982AFBBE22000B8F12 /* SceneDelegate.m */; };
+		462CE89C2AFBBE22000B8F12 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 462CE89B2AFBBE22000B8F12 /* ViewController.m */; };
+		462CE89F2AFBBE22000B8F12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 462CE89D2AFBBE22000B8F12 /* Main.storyboard */; };
+		462CE8A12AFBBE23000B8F12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 462CE8A02AFBBE23000B8F12 /* Assets.xcassets */; };
+		462CE8A42AFBBE23000B8F12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 462CE8A22AFBBE23000B8F12 /* LaunchScreen.storyboard */; };
+		462CE8A72AFBBE23000B8F12 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 462CE8A62AFBBE23000B8F12 /* main.m */; };
+		462CE8BE2AFBBE6B000B8F12 /* FFIPModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 462CE8B12AFBBE6B000B8F12 /* FFIPModel.m */; };
+		462CE8BF2AFBBE6B000B8F12 /* FFIPType.m in Sources */ = {isa = PBXBuildFile; fileRef = 462CE8B22AFBBE6B000B8F12 /* FFIPType.m */; };
+		462CE8C02AFBBE6B000B8F12 /* FFHttpDNSConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 462CE8B42AFBBE6B000B8F12 /* FFHttpDNSConfig.m */; };
+		462CE8C12AFBBE6B000B8F12 /* FFHTTPDNSURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 462CE8B72AFBBE6B000B8F12 /* FFHTTPDNSURLProtocol.m */; };
+		462CE8C22AFBBE6B000B8F12 /* FFURLSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 462CE8BA2AFBBE6B000B8F12 /* FFURLSession.m */; };
+		462CE8C52AFBC009000B8F12 /* FFCFNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 462CE8C42AFBC009000B8F12 /* FFCFNetwork.m */; };
+		462CE8C82AFBC4EA000B8F12 /* FFURLSession+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 462CE8C72AFBC4EA000B8F12 /* FFURLSession+Helper.m */; };
+		462CE8CB2AFBC847000B8F12 /* FFHttpType.m in Sources */ = {isa = PBXBuildFile; fileRef = 462CE8CA2AFBC847000B8F12 /* FFHttpType.m */; };
+		462CE8CF2AFBCF44000B8F12 /* FFIPFetch.m in Sources */ = {isa = PBXBuildFile; fileRef = 462CE8CE2AFBCF44000B8F12 /* FFIPFetch.m */; };
+		462CE8D42AFBD106000B8F12 /* FFHttpDNSCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 462CE8D32AFBD106000B8F12 /* FFHttpDNSCache.m */; };
+		462CE8D72AFBD113000B8F12 /* FFHttpDNSLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 462CE8D62AFBD113000B8F12 /* FFHttpDNSLog.m */; };
+		462CE8DC2AFBD1CA000B8F12 /* FFHttpDNSSpeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 462CE8DB2AFBD1CA000B8F12 /* FFHttpDNSSpeed.m */; };
+		462CE8DF2AFBD217000B8F12 /* FFHttpDNSAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 462CE8DE2AFBD217000B8F12 /* FFHttpDNSAdaptor.m */; };
+		462CE8E22AFBDBA9000B8F12 /* FFHttpDNSIPSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 462CE8E12AFBDBA9000B8F12 /* FFHttpDNSIPSort.m */; };
+		462CE8E52AFCA3F1000B8F12 /* FFHttpDNSAdaptorDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 462CE8E42AFCA3F1000B8F12 /* FFHttpDNSAdaptorDelegate.m */; };
+		462CE8E82AFCC240000B8F12 /* FFDNSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 462CE8E72AFCC240000B8F12 /* FFDNSModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		462CE8912AFBBE22000B8F12 /* ffhttpdns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ffhttpdns.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		462CE8942AFBBE22000B8F12 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		462CE8952AFBBE22000B8F12 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		462CE8972AFBBE22000B8F12 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		462CE8982AFBBE22000B8F12 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		462CE89A2AFBBE22000B8F12 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		462CE89B2AFBBE22000B8F12 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		462CE89E2AFBBE22000B8F12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		462CE8A02AFBBE23000B8F12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		462CE8A32AFBBE23000B8F12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		462CE8A52AFBBE23000B8F12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		462CE8A62AFBBE23000B8F12 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		462CE8AF2AFBBE6B000B8F12 /* FFIPModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFIPModel.h; sourceTree = "<group>"; };
+		462CE8B02AFBBE6B000B8F12 /* FFIPType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFIPType.h; sourceTree = "<group>"; };
+		462CE8B12AFBBE6B000B8F12 /* FFIPModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFIPModel.m; sourceTree = "<group>"; };
+		462CE8B22AFBBE6B000B8F12 /* FFIPType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFIPType.m; sourceTree = "<group>"; };
+		462CE8B42AFBBE6B000B8F12 /* FFHttpDNSConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFHttpDNSConfig.m; sourceTree = "<group>"; };
+		462CE8B52AFBBE6B000B8F12 /* FFHttpDNSConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFHttpDNSConfig.h; sourceTree = "<group>"; };
+		462CE8B72AFBBE6B000B8F12 /* FFHTTPDNSURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFHTTPDNSURLProtocol.m; sourceTree = "<group>"; };
+		462CE8B82AFBBE6B000B8F12 /* FFHTTPDNSURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFHTTPDNSURLProtocol.h; sourceTree = "<group>"; };
+		462CE8BA2AFBBE6B000B8F12 /* FFURLSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFURLSession.m; sourceTree = "<group>"; };
+		462CE8BB2AFBBE6B000B8F12 /* FFURLSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFURLSession.h; sourceTree = "<group>"; };
+		462CE8BD2AFBBE6B000B8F12 /* FFHttpDNS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFHttpDNS.h; sourceTree = "<group>"; };
+		462CE8C32AFBC009000B8F12 /* FFCFNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFCFNetwork.h; sourceTree = "<group>"; };
+		462CE8C42AFBC009000B8F12 /* FFCFNetwork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFCFNetwork.m; sourceTree = "<group>"; };
+		462CE8C62AFBC4EA000B8F12 /* FFURLSession+Helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FFURLSession+Helper.h"; sourceTree = "<group>"; };
+		462CE8C72AFBC4EA000B8F12 /* FFURLSession+Helper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FFURLSession+Helper.m"; sourceTree = "<group>"; };
+		462CE8C92AFBC847000B8F12 /* FFHttpType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFHttpType.h; sourceTree = "<group>"; };
+		462CE8CA2AFBC847000B8F12 /* FFHttpType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFHttpType.m; sourceTree = "<group>"; };
+		462CE8CD2AFBCF44000B8F12 /* FFIPFetch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFIPFetch.h; sourceTree = "<group>"; };
+		462CE8CE2AFBCF44000B8F12 /* FFIPFetch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFIPFetch.m; sourceTree = "<group>"; };
+		462CE8D22AFBD106000B8F12 /* FFHttpDNSCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFHttpDNSCache.h; sourceTree = "<group>"; };
+		462CE8D32AFBD106000B8F12 /* FFHttpDNSCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFHttpDNSCache.m; sourceTree = "<group>"; };
+		462CE8D52AFBD113000B8F12 /* FFHttpDNSLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFHttpDNSLog.h; sourceTree = "<group>"; };
+		462CE8D62AFBD113000B8F12 /* FFHttpDNSLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFHttpDNSLog.m; sourceTree = "<group>"; };
+		462CE8DA2AFBD1C9000B8F12 /* FFHttpDNSSpeed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFHttpDNSSpeed.h; sourceTree = "<group>"; };
+		462CE8DB2AFBD1CA000B8F12 /* FFHttpDNSSpeed.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFHttpDNSSpeed.m; sourceTree = "<group>"; };
+		462CE8DD2AFBD217000B8F12 /* FFHttpDNSAdaptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFHttpDNSAdaptor.h; sourceTree = "<group>"; };
+		462CE8DE2AFBD217000B8F12 /* FFHttpDNSAdaptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFHttpDNSAdaptor.m; sourceTree = "<group>"; };
+		462CE8E02AFBDBA9000B8F12 /* FFHttpDNSIPSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFHttpDNSIPSort.h; sourceTree = "<group>"; };
+		462CE8E12AFBDBA9000B8F12 /* FFHttpDNSIPSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFHttpDNSIPSort.m; sourceTree = "<group>"; };
+		462CE8E32AFCA3F1000B8F12 /* FFHttpDNSAdaptorDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFHttpDNSAdaptorDelegate.h; sourceTree = "<group>"; };
+		462CE8E42AFCA3F1000B8F12 /* FFHttpDNSAdaptorDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFHttpDNSAdaptorDelegate.m; sourceTree = "<group>"; };
+		462CE8E62AFCC240000B8F12 /* FFDNSModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFDNSModel.h; sourceTree = "<group>"; };
+		462CE8E72AFCC240000B8F12 /* FFDNSModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFDNSModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		462CE88E2AFBBE22000B8F12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		462CE8882AFBBE22000B8F12 = {
+			isa = PBXGroup;
+			children = (
+				462CE8932AFBBE22000B8F12 /* ffhttpdns */,
+				462CE8922AFBBE22000B8F12 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		462CE8922AFBBE22000B8F12 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				462CE8912AFBBE22000B8F12 /* ffhttpdns.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		462CE8932AFBBE22000B8F12 /* ffhttpdns */ = {
+			isa = PBXGroup;
+			children = (
+				462CE8942AFBBE22000B8F12 /* AppDelegate.h */,
+				462CE8952AFBBE22000B8F12 /* AppDelegate.m */,
+				462CE8972AFBBE22000B8F12 /* SceneDelegate.h */,
+				462CE8982AFBBE22000B8F12 /* SceneDelegate.m */,
+				462CE89A2AFBBE22000B8F12 /* ViewController.h */,
+				462CE89B2AFBBE22000B8F12 /* ViewController.m */,
+				462CE8AD2AFBBE2B000B8F12 /* httpdns */,
+				462CE89D2AFBBE22000B8F12 /* Main.storyboard */,
+				462CE8A02AFBBE23000B8F12 /* Assets.xcassets */,
+				462CE8A22AFBBE23000B8F12 /* LaunchScreen.storyboard */,
+				462CE8A52AFBBE23000B8F12 /* Info.plist */,
+				462CE8A62AFBBE23000B8F12 /* main.m */,
+			);
+			path = ffhttpdns;
+			sourceTree = "<group>";
+		};
+		462CE8AD2AFBBE2B000B8F12 /* httpdns */ = {
+			isa = PBXGroup;
+			children = (
+				462CE8BD2AFBBE6B000B8F12 /* FFHttpDNS.h */,
+				462CE8B32AFBBE6B000B8F12 /* config */,
+				462CE8D92AFBD1AC000B8F12 /* speed */,
+				462CE8D82AFBD188000B8F12 /* adaptor */,
+				462CE8D12AFBD0E3000B8F12 /* log */,
+				462CE8D02AFBD0DF000B8F12 /* cache */,
+				462CE8CC2AFBCF22000B8F12 /* ipfetch */,
+				462CE8AE2AFBBE6B000B8F12 /* model */,
+				462CE8BC2AFBBE6B000B8F12 /* protocol */,
+				462CE8B92AFBBE6B000B8F12 /* session */,
+			);
+			path = httpdns;
+			sourceTree = "<group>";
+		};
+		462CE8AE2AFBBE6B000B8F12 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				462CE8AF2AFBBE6B000B8F12 /* FFIPModel.h */,
+				462CE8B12AFBBE6B000B8F12 /* FFIPModel.m */,
+				462CE8E62AFCC240000B8F12 /* FFDNSModel.h */,
+				462CE8E72AFCC240000B8F12 /* FFDNSModel.m */,
+				462CE8B02AFBBE6B000B8F12 /* FFIPType.h */,
+				462CE8B22AFBBE6B000B8F12 /* FFIPType.m */,
+				462CE8C92AFBC847000B8F12 /* FFHttpType.h */,
+				462CE8CA2AFBC847000B8F12 /* FFHttpType.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		462CE8B32AFBBE6B000B8F12 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				462CE8B52AFBBE6B000B8F12 /* FFHttpDNSConfig.h */,
+				462CE8B42AFBBE6B000B8F12 /* FFHttpDNSConfig.m */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		462CE8B92AFBBE6B000B8F12 /* session */ = {
+			isa = PBXGroup;
+			children = (
+				462CE8BB2AFBBE6B000B8F12 /* FFURLSession.h */,
+				462CE8BA2AFBBE6B000B8F12 /* FFURLSession.m */,
+				462CE8C62AFBC4EA000B8F12 /* FFURLSession+Helper.h */,
+				462CE8C72AFBC4EA000B8F12 /* FFURLSession+Helper.m */,
+				462CE8C32AFBC009000B8F12 /* FFCFNetwork.h */,
+				462CE8C42AFBC009000B8F12 /* FFCFNetwork.m */,
+			);
+			path = session;
+			sourceTree = "<group>";
+		};
+		462CE8BC2AFBBE6B000B8F12 /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				462CE8B82AFBBE6B000B8F12 /* FFHTTPDNSURLProtocol.h */,
+				462CE8B72AFBBE6B000B8F12 /* FFHTTPDNSURLProtocol.m */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		462CE8CC2AFBCF22000B8F12 /* ipfetch */ = {
+			isa = PBXGroup;
+			children = (
+				462CE8CD2AFBCF44000B8F12 /* FFIPFetch.h */,
+				462CE8CE2AFBCF44000B8F12 /* FFIPFetch.m */,
+			);
+			path = ipfetch;
+			sourceTree = "<group>";
+		};
+		462CE8D02AFBD0DF000B8F12 /* cache */ = {
+			isa = PBXGroup;
+			children = (
+				462CE8D22AFBD106000B8F12 /* FFHttpDNSCache.h */,
+				462CE8D32AFBD106000B8F12 /* FFHttpDNSCache.m */,
+			);
+			path = cache;
+			sourceTree = "<group>";
+		};
+		462CE8D12AFBD0E3000B8F12 /* log */ = {
+			isa = PBXGroup;
+			children = (
+				462CE8D52AFBD113000B8F12 /* FFHttpDNSLog.h */,
+				462CE8D62AFBD113000B8F12 /* FFHttpDNSLog.m */,
+			);
+			path = log;
+			sourceTree = "<group>";
+		};
+		462CE8D82AFBD188000B8F12 /* adaptor */ = {
+			isa = PBXGroup;
+			children = (
+				462CE8E32AFCA3F1000B8F12 /* FFHttpDNSAdaptorDelegate.h */,
+				462CE8E42AFCA3F1000B8F12 /* FFHttpDNSAdaptorDelegate.m */,
+				462CE8DD2AFBD217000B8F12 /* FFHttpDNSAdaptor.h */,
+				462CE8DE2AFBD217000B8F12 /* FFHttpDNSAdaptor.m */,
+			);
+			path = adaptor;
+			sourceTree = "<group>";
+		};
+		462CE8D92AFBD1AC000B8F12 /* speed */ = {
+			isa = PBXGroup;
+			children = (
+				462CE8DA2AFBD1C9000B8F12 /* FFHttpDNSSpeed.h */,
+				462CE8DB2AFBD1CA000B8F12 /* FFHttpDNSSpeed.m */,
+				462CE8E02AFBDBA9000B8F12 /* FFHttpDNSIPSort.h */,
+				462CE8E12AFBDBA9000B8F12 /* FFHttpDNSIPSort.m */,
+			);
+			path = speed;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		462CE8902AFBBE22000B8F12 /* ffhttpdns */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 462CE8AA2AFBBE23000B8F12 /* Build configuration list for PBXNativeTarget "ffhttpdns" */;
+			buildPhases = (
+				462CE88D2AFBBE22000B8F12 /* Sources */,
+				462CE88E2AFBBE22000B8F12 /* Frameworks */,
+				462CE88F2AFBBE22000B8F12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ffhttpdns;
+			productName = ffhttpdns;
+			productReference = 462CE8912AFBBE22000B8F12 /* ffhttpdns.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		462CE8892AFBBE22000B8F12 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					462CE8902AFBBE22000B8F12 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 462CE88C2AFBBE22000B8F12 /* Build configuration list for PBXProject "ffhttpdns" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 462CE8882AFBBE22000B8F12;
+			productRefGroup = 462CE8922AFBBE22000B8F12 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				462CE8902AFBBE22000B8F12 /* ffhttpdns */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		462CE88F2AFBBE22000B8F12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				462CE8A42AFBBE23000B8F12 /* LaunchScreen.storyboard in Resources */,
+				462CE8A12AFBBE23000B8F12 /* Assets.xcassets in Resources */,
+				462CE89F2AFBBE22000B8F12 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		462CE88D2AFBBE22000B8F12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				462CE8C02AFBBE6B000B8F12 /* FFHttpDNSConfig.m in Sources */,
+				462CE8CB2AFBC847000B8F12 /* FFHttpType.m in Sources */,
+				462CE89C2AFBBE22000B8F12 /* ViewController.m in Sources */,
+				462CE8962AFBBE22000B8F12 /* AppDelegate.m in Sources */,
+				462CE8E22AFBDBA9000B8F12 /* FFHttpDNSIPSort.m in Sources */,
+				462CE8D42AFBD106000B8F12 /* FFHttpDNSCache.m in Sources */,
+				462CE8E52AFCA3F1000B8F12 /* FFHttpDNSAdaptorDelegate.m in Sources */,
+				462CE8A72AFBBE23000B8F12 /* main.m in Sources */,
+				462CE8C82AFBC4EA000B8F12 /* FFURLSession+Helper.m in Sources */,
+				462CE8CF2AFBCF44000B8F12 /* FFIPFetch.m in Sources */,
+				462CE8D72AFBD113000B8F12 /* FFHttpDNSLog.m in Sources */,
+				462CE8BE2AFBBE6B000B8F12 /* FFIPModel.m in Sources */,
+				462CE8DF2AFBD217000B8F12 /* FFHttpDNSAdaptor.m in Sources */,
+				462CE8E82AFCC240000B8F12 /* FFDNSModel.m in Sources */,
+				462CE8C52AFBC009000B8F12 /* FFCFNetwork.m in Sources */,
+				462CE8BF2AFBBE6B000B8F12 /* FFIPType.m in Sources */,
+				462CE8992AFBBE22000B8F12 /* SceneDelegate.m in Sources */,
+				462CE8DC2AFBD1CA000B8F12 /* FFHttpDNSSpeed.m in Sources */,
+				462CE8C22AFBBE6B000B8F12 /* FFURLSession.m in Sources */,
+				462CE8C12AFBBE6B000B8F12 /* FFHTTPDNSURLProtocol.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		462CE89D2AFBBE22000B8F12 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				462CE89E2AFBBE22000B8F12 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		462CE8A22AFBBE23000B8F12 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				462CE8A32AFBBE23000B8F12 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		462CE8A82AFBBE23000B8F12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		462CE8A92AFBBE23000B8F12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		462CE8AB2AFBBE23000B8F12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ffhttpdns/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ffzp.httpdns;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		462CE8AC2AFBBE23000B8F12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 5Q8QKERR7H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ffhttpdns/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ffzp.httpdns;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = IOSDEV_2;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		462CE88C2AFBBE22000B8F12 /* Build configuration list for PBXProject "ffhttpdns" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				462CE8A82AFBBE23000B8F12 /* Debug */,
+				462CE8A92AFBBE23000B8F12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		462CE8AA2AFBBE23000B8F12 /* Build configuration list for PBXNativeTarget "ffhttpdns" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				462CE8AB2AFBBE23000B8F12 /* Debug */,
+				462CE8AC2AFBBE23000B8F12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 462CE8892AFBBE22000B8F12 /* Project object */;
+}
