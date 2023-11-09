@@ -186,6 +186,7 @@ static char * const BaseEvaluatedStream = "FF_EvaluatedStream";
     [aStream removeFromRunLoop:self.runloop forMode:NSRunLoopCommonModes];
     [aStream setDelegate:nil];
     [aStream close];
+    [self.delegate didfinishTask];
 }
 
 
