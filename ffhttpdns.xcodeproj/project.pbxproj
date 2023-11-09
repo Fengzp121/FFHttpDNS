@@ -30,6 +30,8 @@
 		462CE8E22AFBDBA9000B8F12 /* FFHttpDNSIPSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 462CE8E12AFBDBA9000B8F12 /* FFHttpDNSIPSort.m */; };
 		462CE8E52AFCA3F1000B8F12 /* FFHttpDNSAdaptorDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 462CE8E42AFCA3F1000B8F12 /* FFHttpDNSAdaptorDelegate.m */; };
 		462CE8E82AFCC240000B8F12 /* FFDNSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 462CE8E72AFCC240000B8F12 /* FFDNSModel.m */; };
+		46B6E3122AFCCB2B0048DCCC /* FFHttpDNSTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B6E3112AFCCB2B0048DCCC /* FFHttpDNSTool.m */; };
+		46B6E3152AFCCB9A0048DCCC /* FFHttpDNSTool+helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B6E3142AFCCB9A0048DCCC /* FFHttpDNSTool+helper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +80,10 @@
 		462CE8E42AFCA3F1000B8F12 /* FFHttpDNSAdaptorDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFHttpDNSAdaptorDelegate.m; sourceTree = "<group>"; };
 		462CE8E62AFCC240000B8F12 /* FFDNSModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFDNSModel.h; sourceTree = "<group>"; };
 		462CE8E72AFCC240000B8F12 /* FFDNSModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFDNSModel.m; sourceTree = "<group>"; };
+		46B6E3102AFCCB2B0048DCCC /* FFHttpDNSTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFHttpDNSTool.h; sourceTree = "<group>"; };
+		46B6E3112AFCCB2B0048DCCC /* FFHttpDNSTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFHttpDNSTool.m; sourceTree = "<group>"; };
+		46B6E3132AFCCB9A0048DCCC /* FFHttpDNSTool+helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FFHttpDNSTool+helper.h"; sourceTree = "<group>"; };
+		46B6E3142AFCCB9A0048DCCC /* FFHttpDNSTool+helper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FFHttpDNSTool+helper.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +145,7 @@
 				462CE8AE2AFBBE6B000B8F12 /* model */,
 				462CE8BC2AFBBE6B000B8F12 /* protocol */,
 				462CE8B92AFBBE6B000B8F12 /* session */,
+				46B6E30F2AFCCAC70048DCCC /* util */,
 			);
 			path = httpdns;
 			sourceTree = "<group>";
@@ -238,6 +245,17 @@
 			path = speed;
 			sourceTree = "<group>";
 		};
+		46B6E30F2AFCCAC70048DCCC /* util */ = {
+			isa = PBXGroup;
+			children = (
+				46B6E3102AFCCB2B0048DCCC /* FFHttpDNSTool.h */,
+				46B6E3112AFCCB2B0048DCCC /* FFHttpDNSTool.m */,
+				46B6E3132AFCCB9A0048DCCC /* FFHttpDNSTool+helper.h */,
+				46B6E3142AFCCB9A0048DCCC /* FFHttpDNSTool+helper.m */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -308,6 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46B6E3122AFCCB2B0048DCCC /* FFHttpDNSTool.m in Sources */,
 				462CE8C02AFBBE6B000B8F12 /* FFHttpDNSConfig.m in Sources */,
 				462CE8CB2AFBC847000B8F12 /* FFHttpType.m in Sources */,
 				462CE89C2AFBBE22000B8F12 /* ViewController.m in Sources */,
@@ -324,6 +343,7 @@
 				462CE8E82AFCC240000B8F12 /* FFDNSModel.m in Sources */,
 				462CE8C52AFBC009000B8F12 /* FFCFNetwork.m in Sources */,
 				462CE8BF2AFBBE6B000B8F12 /* FFIPType.m in Sources */,
+				46B6E3152AFCCB9A0048DCCC /* FFHttpDNSTool+helper.m in Sources */,
 				462CE8992AFBBE22000B8F12 /* SceneDelegate.m in Sources */,
 				462CE8DC2AFBD1CA000B8F12 /* FFHttpDNSSpeed.m in Sources */,
 				462CE8C22AFBBE6B000B8F12 /* FFURLSession.m in Sources */,

@@ -11,11 +11,11 @@
 @implementation FFCFNetwork
 
 
--(void)startLoadingWithRequest:(NSURLRequest *)request complete:(void (^)(id _Nonnull, NSError * _Nonnull))complete{
+-(void)startLoadingWithRequest:(NSURLRequest *)request complete:(void (^)(NSData *, NSURLResponse *, NSError *))complete {
     self.mutableRequest = [request mutableCopy];
-    
-    
 }
+
+
 
 /// 添加  CFNetwork 请求体
 - (void)addBodyToRequestRef:(CFHTTPMessageRef)requestRef {
