@@ -1,7 +1,7 @@
 #import "FFCFNetwork.h"
 #import <objc/runtime.h>
 
-static char * const BaseEvaluatedStream = "BaseEvaluatedStream";
+static char * const BaseEvaluatedStream = "FF_EvaluatedStream";
 
 @interface FFCFNetwork()<NSStreamDelegate>
 @property (nonatomic, copy) NSMutableURLRequest *mutableRequest;
@@ -16,7 +16,6 @@ static char * const BaseEvaluatedStream = "BaseEvaluatedStream";
 -(void)startLoadingWithRequest:(NSURLRequest *)request{
     self.mutableRequest = [request mutableCopy];
 }
-
 
 
 /// 添加  CFNetwork 请求体
@@ -131,14 +130,13 @@ static char * const BaseEvaluatedStream = "BaseEvaluatedStream";
 /// 设置 CFNetwork 超时时间
 - (void)setupTimer {
     if (!self.timer) {
-        //self.request.timeoutInterval
         __weak __typeof(self)weakSelf = self;
         self.timer = [NSTimer scheduledTimerWithTimeInterval:self.mutableRequest.timeoutInterval repeats:NO block:^(NSTimer * _Nonnull timer) {
             __strong __typeof(weakSelf)strongSelf = weakSelf;
             // 超时了关闭当前流
             [strongSelf closeStream:strongSelf.inputStream];
             // 返回一个超时错误给上层
-            NSDictionary *userInfo = [NSDictionary dictionaryWithObjectsAndKeys:@"BaseCFDNSProtocol请求超时", NSLocalizedDescriptionKey, @"失败原因：请求超时", NSLocalizedFailureReasonErrorKey, @"恢复建议：请检查当前网络环境",NSLocalizedRecoverySuggestionErrorKey,nil];
+            NSDictionary *userInfo = [NSDictionary dictionaryWithObjectsAndKeys:@"CFDNSProtocol请求超时", NSLocalizedDescriptionKey, @"失败原因：请求超时", NSLocalizedFailureReasonErrorKey, @"恢复建议：请检查当前网络环境",NSLocalizedRecoverySuggestionErrorKey,nil];
             NSError *error = [NSError errorWithDomain:NSCocoaErrorDomain code:-1001 userInfo:userInfo];
             if(strongSelf.delegate && [strongSelf.delegate respondsToSelector:@selector(error:)]) {
                 [strongSelf.delegate error:error];
@@ -300,42 +298,11 @@ static char * const BaseEvaluatedStream = "BaseEvaluatedStream";
     // 校验结果
     OSStatus status = SecTrustEvaluate(trust, &res);
     if (status != errSecSuccess) {
-//        [[BaseDNSAdpator shared] dnsReportWithType: TSHttpDNSAdpatorEventTypeHttpDNSSSLVaildFailure
-//                                               msg: [NSString stringWithFormat: @"HttpDNS：SSL校验失败，Code：%i", status]
-//                                          serverIP: [[self.mutableRequest URL] host]
-//                                              cost: nil
-//                                            domain: [[self.mutableRequest URL] host]
-//                                               uri: [[self.mutableRequest URL] path]
-//                                             query: [[self.mutableRequest URL] query]
-//                                          protocol: [[self.mutableRequest URL] scheme]
-//                                            method: [[self.mutableRequest HTTPMethod] lowercaseString]
-//                                      responseData: nil
-//                                               ext: @{
-//                                                    @"host": domain ?: @"",
-//                                                    @"statuscode": [NSString stringWithFormat:@"%i", status],
-//                                                    @"sec_trust_result_type": [NSString stringWithFormat:@"%i", res]
-//                                                }];
         return NO;  // 如果有任何报错就返回失败
     }
     if (res != kSecTrustResultProceed && res != kSecTrustResultUnspecified) {
-//        [[BaseDNSAdpator shared] dnsReportWithType: TSHttpDNSAdpatorEventTypeHttpDNSSSLVaildFailure
-//                                               msg: [NSString stringWithFormat: @"HttpDNS：SSL校验失败，隐式信任或用户信任意图不明确，Code：%i", res]
-//                                          serverIP: [[self.mutableRequest URL] host]
-//                                              cost: nil
-//                                            domain: [[self.mutableRequest URL] host]
-//                                               uri: [[self.mutableRequest URL] path]
-//                                             query: [[self.mutableRequest URL] query]
-//                                          protocol: [[self.mutableRequest URL] scheme]
-//                                            method: [[self.mutableRequest HTTPMethod] lowercaseString]
-//                                      responseData: nil
-//                                               ext: @{
-//                                                    @"host": domain ?: @"",
-//                                                    @"statuscode": [NSString stringWithFormat:@"%i", status],
-//                                                    @"sec_trust_result_type": [NSString stringWithFormat:@"%i", res]
-//                                                }];
         return NO;  // 隐式信任，用户信任意图不明确，所以返回校验失败
     }
-//    [[BaseDNSLog shared] putWithReq:self.mutableRequest val:@"BaseCFURLProtocol: 校验https成功" errorLog:NO isEnd:NO];
     return YES;
 }
 
@@ -387,7 +354,6 @@ static char * const BaseEvaluatedStream = "BaseEvaluatedStream";
     if (![self isRedirectCode:statusCode]) {
         NSHTTPURLResponse *response = [[NSHTTPURLResponse alloc] initWithURL:self.mutableRequest.URL statusCode:statusCode HTTPVersion: httpVersion headerFields:headDict];
         [self.delegate successWithResponse:response];
-//        [self.client URLProtocol:self didReceiveResponse:response cacheStoragePolicy:NSURLCacheStorageNotAllowed];
     }
 }
 
@@ -442,6 +408,9 @@ static char * const BaseEvaluatedStream = "BaseEvaluatedStream";
     [self startRequest];
 }
 
-
+#pragma mark - retry/重试逻辑
+- (void)retry {
+    
+}
 
 @end
